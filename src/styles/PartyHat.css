@@ -1,0 +1,8 @@
+.party-hat {
+  width: 50px;
+  height: 50px;
+  background-image: url('../assets/party-hat.png');
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+}

@@ -1,0 +1,38 @@
+.doggie {
+  width: 50px;
+  height: 50px;
+  background-image: url('./assets/doggie.png');
+  background-size: cover;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.doggie-move {
+  animation: doggie-move 1s infinite;
+}
+
+@keyframes doggie-move {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.doggie-eat-pizza {
+  animation: doggie-eat-pizza 0.5s infinite;
+}
+
+@keyframes doggie-eat-pizza {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.doggie-avoid-chocolate {
+  animation: doggie-avoid-chocolate 0.5s infinite;
+}
+
+@keyframes doggie-avoid-chocolate {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
